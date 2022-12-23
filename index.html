@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="from">
+      <h1>File Generator</h1>
+      <textarea placeholder="Enter Your Text" class="textarea"></textarea>
+      <input type="text" placeholder="Enter Your File Name" class="Filename">
+       <select class="selectMenu" onchange="selectOption()">
+        <option value="text/plain">Text File (.txt)</option>
+        <option value="text/javascript">JS File (.js)</option>
+        <option value="text/html">HTML File (.html)</option>
+        <option value="image/svg+xml">SVG File (.svg)</option>
+        <option value="application/msword">Doc File (.doc)</option>
+        <option value="application/vnd.ms-powerpoint">PPT File (.ppt)</option>
+       </select>
+      <button class="save-btn Get" type="button" onclick="Generate()">Generate As Text File</button>
+    </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
